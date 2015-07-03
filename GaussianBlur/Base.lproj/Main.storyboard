@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QJ9-K6-UuO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cs2-Ux-vQI">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cs2-Ux-vQI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="26H-8A-jOT"/>
+                            <constraint firstAttribute="trailing" secondItem="Cs2-Ux-vQI" secondAttribute="trailing" id="4Ux-eu-0db"/>
+                            <constraint firstItem="Cs2-Ux-vQI" firstAttribute="top" secondItem="QJ9-K6-UuO" secondAttribute="bottom" id="4qc-uE-ekn"/>
+                            <constraint firstAttribute="trailing" secondItem="QJ9-K6-UuO" secondAttribute="trailing" id="TTj-Ji-6yv"/>
+                            <constraint firstItem="QJ9-K6-UuO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XRg-fD-X9u"/>
+                            <constraint firstItem="Cs2-Ux-vQI" firstAttribute="top" secondItem="QJ9-K6-UuO" secondAttribute="bottom" id="YaA-fl-EEd"/>
+                            <constraint firstItem="QJ9-K6-UuO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bhp-9t-q6u"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cs2-Ux-vQI" secondAttribute="bottom" id="ddd-CG-kcJ"/>
+                            <constraint firstItem="Cs2-Ux-vQI" firstAttribute="height" secondItem="QJ9-K6-UuO" secondAttribute="height" id="qsf-uj-4TI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="QJ9-K6-UuO"/>
+                                <exclude reference="Cs2-Ux-vQI"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="TTj-Ji-6yv"/>
+                                <exclude reference="XRg-fD-X9u"/>
+                                <exclude reference="bhp-9t-q6u"/>
+                                <exclude reference="26H-8A-jOT"/>
+                                <exclude reference="4Ux-eu-0db"/>
+                                <exclude reference="4qc-uE-ekn"/>
+                                <exclude reference="YaA-fl-EEd"/>
+                                <exclude reference="qsf-uj-4TI"/>
+                                <exclude reference="ddd-CG-kcJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="QJ9-K6-UuO"/>
+                                <include reference="Cs2-Ux-vQI"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="TTj-Ji-6yv"/>
+                                <include reference="XRg-fD-X9u"/>
+                                <include reference="bhp-9t-q6u"/>
+                                <include reference="26H-8A-jOT"/>
+                                <include reference="4Ux-eu-0db"/>
+                                <include reference="4qc-uE-ekn"/>
+                                <include reference="YaA-fl-EEd"/>
+                                <include reference="qsf-uj-4TI"/>
+                                <include reference="ddd-CG-kcJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="Cs2-Ux-vQI" id="xfN-AM-TFD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.5" y="327"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.jpg" width="600" height="450"/>
+    </resources>
+</document>
